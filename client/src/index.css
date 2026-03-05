@@ -1,0 +1,287 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(to bottom, #eef2ff, #f8fafc);
+  color: #0f172a;
+}
+
+
+.jt-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.jt-shell {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 20px;
+}
+
+.jt-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.jt-brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.jt-logo {
+  font-size: 24px;
+}
+
+.jt-brand-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.jt-brand-subtitle {
+  font-size: 13px;
+  color: #64748b;
+}
+
+
+.jt-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.jt-h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.jt-muted {
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.jt-primary-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.jt-primary-btn:hover {
+  background: #4338ca;
+}
+
+.jt-full {
+  width: 100%;
+}
+
+.jt-link-btn {
+  background: none;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.jt-link {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.jt-form-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #e2e8f0;
+}
+
+.jt-form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.jt-form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.jt-label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #475569;
+}
+
+.jt-input,
+.jt-select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+}
+
+.jt-filter {
+  margin-bottom: 20px;
+}
+
+.jt-job-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.jt-job-card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+}
+
+.jt-job-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.jt-company {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.jt-title {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.jt-delete-btn {
+  background: none;
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.jt-delete-btn:hover {
+  color: red;
+}
+
+.jt-job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jt-status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.jt-status-applied {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.jt-status-interview {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.jt-status-rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.jt-status-offer {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.jt-auth-page {
+  align-items: center;
+}
+
+.jt-auth-card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  width: 380px;
+  border: 1px solid #e2e8f0;
+}
+
+.jt-auth-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.jt-auth-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.jt-auth-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.jt-auth-subtitle {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.jt-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.jt-auth-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.jt-alert {
+  color: red;
+  font-size: 14px;
+}
+
+.jt-status-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  background: white;
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.jt-status-select:hover {
+  border-color: #4f46e5;
+}
+
+.jt-status-select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
