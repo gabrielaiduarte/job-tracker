@@ -78,7 +78,7 @@ JWT authentication is used to protect user-specific routes so that each user can
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/gabrielaiduarte/job-tracker
 cd JobTrackerApp
 ```
 
