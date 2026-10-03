@@ -1,67 +1,98 @@
-# Job Tracker App
+# Job Tracker
 
-A full-stack job application tracking system that allows users to manage and track their job applications in one place.
+A full-stack web app I built to keep track of job applications and where I am in the hiring process. Users can create an account, add applications, update their status, and filter through them from one dashboard.
 
-Users can register, log in securely, and monitor the progress of their job applications.
+![Job Tracker Dashboard](./screenshots/dashboard.png)
 
 ## Features
 
-- User authentication (Register / Login)
-- Protected dashboard
-- Add job applications
-- Update job status
-- Delete job applications
-- Filter jobs by status
+- Create an account and log in securely
+- Add and manage job applications
+- Track company, position, status, and other application details
+- Update applications as they move through the hiring process
+- Filter applications by status
+- Keep each user's applications private through authentication
+
+## Screenshots
+
+### Applications
+
+View and manage all job applications in one place.
+
+![Applications](./screenshots/applications.png)
+
+### Filter by Status
+
+Filter applications based on their current status to quickly find what you're looking for.
+
+![Status Filter](./screenshots/status-filter.png)
+
+### Login
+
+Users can log in to access their own application dashboard.
+
+![Login](./screenshots/login.png)
 
 ## Tech Stack
 
 ### Frontend
+
 - React
 - Vite
 - React Router
 - CSS
 
 ### Backend
-- Node.js
-- Express
-- SQLite
 
-### Tools
-- Git
-- GitHub
+- Node.js
+- Express.js
+- SQLite
+- JWT authentication
 
 ## Project Structure
 
-job-tracker  
-├── client  
-│ ├── src  
-│ ├── components  
-│ ├── pages  
-│ ├── services  
-│ └── utils  
-
-├── server  
-│ ├── routes  
-│ ├── middleware  
-│ ├── database  
-│ └── server.js  
-
-## Installation
-
-Clone the repository
-```bash
-git clone https://github.com/gabrielaiduarte/job-tracker.git
+```text
+JobTrackerApp/
+├── client/
+│   └── src/
+│       ├── App.jsx
+│       └── index.css
+├── screenshots/
+│   ├── applications.png
+│   ├── dashboard.png
+│   ├── login.png
+│   └── status-filter.png
+├── server/
+├── .gitignore
+└── README.md
 ```
 
-### Backend
+## How It Works
+
+The React frontend communicates with the Express backend through REST API requests. The backend handles authentication and application data, while SQLite is used to store users and their job applications.
+
+JWT authentication is used to protect user-specific routes so that each user can only access their own application data.
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+cd JobTrackerApp
+```
+
+### Start the backend
 
 ```bash
 cd server
 npm install
-npm start
+npm run dev
 ```
 
-### Frontend
+### Start the frontend
+
+Open another terminal:
 
 ```bash
 cd client
@@ -69,19 +100,8 @@ npm install
 npm run dev
 ```
 
----
+Then open the local URL provided by Vite in your browser.
 
-## Future Improvements
+## What I Learned
 
-- Search jobs
-- Edit job details
-- Job notes
-- Dark mode
-- Deploy online
-
----
-
-## Author
-
-Gabriela Duarte  
-Computer Science Student
+This project gave me more experience building a full-stack application from frontend to backend. I worked with REST APIs, authentication, protected routes, database operations, and connecting a React frontend to an Express backend.
